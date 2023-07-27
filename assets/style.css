@@ -1,7 +1,52 @@
 
 
 
+:root{
+    --boolstrap-search-dark: #e5e5e5;
+    --boolstrap-bell: #ff8f00;
+    --boolstrap-sidebar-dark-blue: #051e34;
+}
+
+/* #region header */
+
+.cm_bell{
+    color: var(--boolstrap-bell);
+}
+
+.cm_bg_search{
+    background-color: var(--boolstrap-search-dark);
+}
+
+.cm_bg_sidebar{
+    background-color: var(--boolstrap-sidebar-dark-blue);
+    background-image: url(../assets/img/sidebar-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desktop_logo, .nav-item{
+    display: none;
+}
+
+.dropdown{
+    display: block;
+}
+
+
+
+
+/* #endregion header */
+
 
 .dropdown-toggle::after {
     display: none;
 }
+
+/* #region Sidebar */
+
+
+
+
+
+/* #wndregion Sidebar */
