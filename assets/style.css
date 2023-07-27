@@ -5,7 +5,20 @@
     --boolstrap-search-dark: #e5e5e5;
     --boolstrap-bell: #ff8f00;
     --boolstrap-sidebar-dark-blue: #051e34;
+    --boolstrap-class-bg: #f26551;
 }
+
+.cm_class_bg{
+    background-color: var(--boolstrap-class-bg);
+    border-radius: 50%;
+    color: white;
+    line-height: 20px;
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+    
+}
+
+
 
 /* #region header */
 
