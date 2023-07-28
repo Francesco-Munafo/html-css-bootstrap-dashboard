@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
                             src="./assets/img/logo.svg"
                             alt="boolean logo"></a>
 
-                    <form class="d-flex w-75" role="search">
+                    <form class="d-flex flex-grow-1 w-100" role="search">
 
                         <input class="form-control mx-2 cm_bg_search"
                             type="search"
@@ -41,32 +41,30 @@
                     <div class="collapse navbar-collapse"
                         id="navbarSupportedContent">
                         <ul
-                            class="navbar-nav mb-2 mb-lg-0 w-25">
-                            <li class="nav-item">
+                            class="navbar-nav mb-2 mb-lg-0 ">
+                            <li class="nav-item d-none d-lg-block">
                                 <a class="nav-link" aria-current="page" href="#"><i
                                         class="fa-solid fa-list-ul"></i></a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-lg-block">
                                 <a class="nav-link" aria-current="page" href="#"><i
                                         class="fa-solid fa-circle-question"></i></a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-lg-block">
                                 <a class="nav-link" href="#"><i
                                         class="fa-solid fa-ellipsis-vertical"></i></a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
+                            <li class="nav-item dropstart">
+                                <a class="nav-link dropstart-toggle" href="#"
                                     role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     <i class="fa-solid fa-bell cm_bell"></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another
-                                            action</a></li>
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something
-                                            else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -76,96 +74,194 @@
 
         </header>
 
-        <main>
-            <div class="container-fluid">
-                <div class="row flex-nowrap overflow-y-hidden">
+        <main class="overflow-x-hidden">
+            <div class="container-fluid cm_main_height">
+                <div class="row flex-nowrap">
                     <div
-                        class="col-1 col-lg-2 px-sm-2 px-0 cm_bg_sidebar overflow-hidden">
-                        <div
-                            class="sidebar d-flex align-items-center justify-content-between flex-column px-3 px-lg-0 py-2 text-white vh-100">
-                            <ul class="list-group">
-                                <li
-                                    class="list-group-item bg-transparent border-0 text-white"><i
-                                        class="fa-solid fa-house m-2"></i><span
-                                        class="d-none d-lg-inline-block">Home</span></li>
-                                <li
-                                    class="list-group-item bg-transparent border-0 text-white"><i
-                                        class="fa-solid fa-chart-simple m-2"></i><span
-                                        class="d-none d-lg-inline-block">Stats</span></li>
-                                <li
-                                    class="list-group-item bg-transparent border-0 text-white"><i
-                                        class="fa-solid fa-signal m-1"></i><span
-                                        class="d-none d-lg-inline-block">Signals</span></li>
-                            </ul>
-                            <div class="settings py-2">
-                                <a href="#"
-                                    class="text-white text-decoration-none">
-                                    <i class="fa-solid fa-gear p-1"></i>
-                                    <span class="d-none d-lg-inline-block">Admin</span>
-                                </a>
+                        class="sidebar col col-lg-1 px-sm-2 px-0 px-lg-0 py-3 pb-3 cm_bg_sidebar d-flex flex-column justify-content-between align-items-center text-white text-sm-center text-lg-start">
+                        <ul class="list-group">
+                            <li
+                                class="list-group-item bg-transparent border-0 px-0"><a  href="#" class="text-white cm_sidenav_bg p-lg-2"><i
+                                    class="fa-solid fa-house me-lg-1"></i><span
+                                    class="d-none d-lg-inline-block">Home</span></a></li>
+                            <li
+                                class="list-group-item bg-transparent border-0 px-0"><a href="#" class="text-white cm_sidenav_bg p-lg-2"><i
+                                    class="fa-solid fa-chart-simple me-lg-2"></i><span
+                                    class="d-none d-lg-inline-block">Stats</span></a></li>
+                            <li
+                                class="list-group-item bg-transparent border-0 px-0"><a href="#" class="text-white cm_sidenav_bg p-lg-2"><i
+                                    class="fa-solid fa-signal me-lg-1"></i><span
+                                    class="d-none d-lg-inline-block">Signals</span></a></li>
+                        </ul>
+                        <div class="settings py-2">
+                            <a href="#"
+                                class="text-white text-decoration-none">
+                                <i class="fa-solid fa-gear p-1"></i>
+                                <span class="d-none d-lg-inline-block">Admin</span>
+                            </a>
 
-                            </div>
                         </div>
                     </div>
-                    <div class="col-11 col-lg-10 bg-light overflow-y-auto">
+                    <div class="main col-11 col-lg-11 bg-light overflow-y-auto ">
                         <!-- Main Top -->
                         <div
-                            class="row flex-column flex-lg-row bg-primary py-3 text-white">
-                            <div class="col-12 col-lg-4 d-flex py-3">
+                            class="row flex-column flex-md-row justify-content-lg-between bg-primary py-3 text-white">
+                            <div
+                                class="col-12 col-md-4 col-lg-3 d-flex justify-content-lg-end order-md-3">
                                 <h5 class="mb-0 pt-1">Nuovo Studente</h5>
-
-                                <a class="btn btn-primary border ms-3"
-                                    data-bs-toggle="offcanvas"
-                                    href="#offcanvasExample" role="button"
-                                    aria-controls="offcanvasExample">
-                                    <i class="fa-solid fa-plus"></i>
-                                </a>
-
-                                <div class="offcanvas offcanvas-end"
+                                <div>
+                                    <a class="btn btn-primary border ms-2"
+                                        data-bs-toggle="offcanvas"
+                                        href="#offcanvasExample" role="button"
+                                        aria-controls="offcanvasExample">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </div>
+                                <div class="offcanvas offcanvas-end px-3 "
                                     tabindex="-1" id="offcanvasExample"
                                     aria-labelledby="offcanvasExampleLabel">
                                     <div class="offcanvas-header">
                                         <h5 class="offcanvas-title"
-                                            id="offcanvasExampleLabel">Offcanvas</h5>
+                                            id="offcanvasExampleLabel">Inserisci
+                                            un nuovo studente</h5>
                                         <button type="button" class="btn-close"
                                             data-bs-dismiss="offcanvas"
                                             aria-label="Close"></button>
                                     </div>
-                                    <div class="offcanvas-body">
-                                        <div>
-                                            Some text as placeholder. In real
-                                            life you can have the elements you
-                                            have chosen. Like, text, images,
-                                            lists, etc.
+                                    <form>
+                                    <div class="col-12 d-flex gap-3">
+                                        <div class="mb-3 w-50">
+                                            <label
+                                                for="name"
+                                                class="form-label">Nome</label>
+                                            <input type="text"
+                                                class="form-control"
+                                                id="name">
                                         </div>
-                                        <div class="dropdown mt-3">
-                                            <button
-                                                class="btn btn-secondary dropdown-toggle"
-                                                type="button"
-                                                data-bs-toggle="dropdown">
-                                                Dropdown button
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item"
-                                                        href="#">Action</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="#">Another action</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="#">Something else
-                                                        here</a></li>
-                                            </ul>
+                                        <div class="mb-3 w-50">
+                                            <label
+                                                for="surname"
+                                                class="form-label">Cognome</label>
+                                            <input type="text"
+                                                class="form-control"
+                                                id="surname">
                                         </div>
                                     </div>
+                                    <div class="col-12 d-flex gap-3">
+                                        <div class="mb-3 w-50">
+                                            <label for="email"
+                                                class="form-label">Email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"
+                                                    id="basic-addon3">@</span>
+                                                <input type="text"
+                                                    class="form-control"
+                                                    id="email"
+                                                    aria-describedby="basic-addon3 basic-addon4">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 w-50">
+                                            <label for="password"
+                                                class="form-label">Password</label>
+                                            <input type="password"
+                                                id="password"
+                                                class="form-control"
+                                                aria-describedby="passwordHelpBlock">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label
+                                                for="address"
+                                                class="form-label">Indirizzo</label>
+                                            <input type="text"
+                                                class="form-control"
+                                                id="address">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex gap-3">
+                                        <div class="mb-3 w-50">
+                                            <label
+                                                for="city"
+                                                class="form-label">Città</label>
+                                            <input type="text"
+                                                class="form-control"
+                                                id="city">
+                                        </div>
+                                        <div class="mb-3 w-25">
+                                            <label for="state"
+                                                class="form-label">Stato</label>
+                                            <select class="form-select"
+                                                aria-label="Default select example">
+                                                <option selected>Scegli...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 w-25">
+                                            <label
+                                                for="cap"
+                                                class="form-label">CAP</label>
+                                            <input type="text"
+                                                class="form-control"
+                                                id="cap">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex">
+                                        <div class="input-group mb-3">
+                                            <input type="file"
+                                                class="form-control"
+                                                id="inputGroupFile02">
+                                        </div>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="checkbox" value
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label"
+                                            for="flexCheckDefault">
+                                            Seleziona per proseguire
+                                        </label>
+                                    </div>
+                                    <div class="d-flex mt-4 gap-3">
+                                        <button type="button" class="btn btn-primary">Salva</button>
+                                        <button type="reset" class="btn btn-warning">Svuota</button>
+
+                                    </div>
+                                </form>
+
                                 </div>
 
                             </div>
-                            <div class="col-12 col-lg-4">
-                                <h3>Boolean</h3>
+                            <div class="col-12 col-md-4 col-lg-6">
+                                <h3 class="fs-1">Boolean <span
+                                        class="badge rounded-pill p-1 px-2 cm_badge_bg fw-semibold fs-6">Piano
+                                        blaze</span></h3>
+                                <div
+                                    class="badge_navigation d-flex gap-1 align-items-center">
+                                    <a href="#"
+                                        class="badge rounded-pill text-decoration-none p-1 px-2 cm_badge_bg fw-semibold fs-6">3
+                                        app</a>
+                                    <i class="fa-solid fa-angles-right"></i>
 
+                                    <a href="#"
+                                        class="d-xl-none badge rounded-pill p-1 cm_badge_bg fw-semibold fs-6"><i
+                                            class="fa-solid fa-plus"></i></a>
+                                    <a href="#"
+                                        class="d-none d-xl-block text-decoration-none badge rounded-pill p-1 px-2 cm_badge_bg fw-semibold fs-6">Boolean
+                                        mobile app</a>
+                                    <a href="#"
+                                        class="d-none d-xl-block text-decoration-none badge rounded-pill p-1 px-2 cm_badge_bg fw-semibold fs-6">Boolean
+                                        web app</a>
+                                    <a href="#"
+                                        class="d-none d-xl-block text-decoration-none badge rounded-pill p-1 px-2 cm_badge_bg fw-semibold fs-6">Boolean
+                                        blog app</a>
+                                </div>
                             </div>
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 col-md-4 col-lg-3">
                                 <h5>Studenti online negli ultimi 30 minuti</h5>
-                                <h4>125</h4>
+                                <h2>125</h2>
                             </div>
                         </div>
                         <!-- /Main Top -->
@@ -340,10 +436,7 @@
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                            </div>
-                                            <!-- /CLASS -->
-                                            <div class="col-12 col-lg-5 pt-4">
-                                                <div class="card">
+                                                <div class="card my-4">
                                                     <div
                                                         class="card-body bg-light">
                                                         <h5
@@ -442,10 +535,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
-                                            <!-- /TODO 5/12 -->
-                                            <div class="col-12 col-lg-7 pt-4">
+                                            <!-- /CLASS -->
+                                            <div
+                                                class="col-12 col-lg-5">
                                                 <div class="card">
                                                     <div
                                                         class="card-body bg-light">
@@ -508,23 +601,46 @@
                                                         </li>
                                                     </div>
                                                     <div class="card my-4">
-                                                        <img src="./assets/img/stats.jpeg" class="card-img-top" alt="...">
+                                                        <img
+                                                            src="./assets/img/stats.jpeg"
+                                                            class="card-img-top"
+                                                            alt="...">
                                                         <div class="card-body">
-                                                          <h5 class="card-title">Utenti attivi</h5>
-                                                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                                            <h5
+                                                                class="card-title">Utenti
+                                                                attivi</h5>
+                                                            <p class="card-text">Lista
+                                                                degli utenti
+                                                                attivi in
+                                                                piattaforma nell'ultimo
+                                                                mese</p>
                                                         </div>
-                                                        <ul class="list-group list-group-flush">
-                                                          <li class="list-group-item">Gennaio: 1200</li>
-                                                          <li class="list-group-item">Febbraio: 800</li>
-                                                          <li class="list-group-item">Marzo: 1500</li>
+                                                        <ul
+                                                            class="list-group list-group-flush">
+                                                            <li
+                                                                class="list-group-item">Gennaio:
+                                                                1200</li>
+                                                            <li
+                                                                class="list-group-item">Febbraio:
+                                                                800</li>
+                                                            <li
+                                                                class="list-group-item">Marzo:
+                                                                1500</li>
                                                         </ul>
                                                         <div class="card-body">
-                                                          <a href="#" class="card-link">Visualizza report approfondito</a>
+                                                            <a href="#"
+                                                                class="card-link">Visualizza
+                                                                report
+                                                                approfondito</a>
                                                         </div>
-                                                      </div>
+                                                    </div>
                                                 </div>
                                                 <!-- /FAQ -->
                                             </div>
+                                            <div class="col-12 col-lg-7">
+
+                                            </div>
+                                            <!-- /TODO 5/12 -->
 
                                         </div>
                                     </div>

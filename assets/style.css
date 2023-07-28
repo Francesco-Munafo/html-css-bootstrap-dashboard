@@ -6,6 +6,9 @@
     --boolstrap-bell: #ff8f00;
     --boolstrap-sidebar-dark-blue: #051e34;
     --boolstrap-class-bg: #f26551;
+    --boolstrap-badge-bg: #165bba;
+    --boolstrap-badge-hover-bg: #13468d;
+    --boolstrap-sidenav-hover-bg: #a8a8a8;
 }
 
 .cm_class_bg{
@@ -18,9 +21,17 @@
     
 }
 
+.cm_main_height{
+    height: calc(100vh - 70px);
+}
+
 
 
 /* #region header */
+
+header nav{
+    height: 70px;
+}
 
 .cm_bell{
     color: var(--boolstrap-bell);
@@ -38,28 +49,58 @@
     background-size: cover;
 }
 
-.desktop_logo, .nav-item{
-    display: none;
-}
-
-.dropdown{
-    display: block;
-}
-
 
 
 
 /* #endregion header */
 
 
-.dropdown-toggle::after {
+.dropstart-toggle::after {
     display: none;
 }
 
 /* #region Sidebar */
 
+.cm_sidenav_bg:hover{
+    background-color: var(--boolstrap-sidenav-hover-bg);
+}
 
 
 
+/* #endregion Sidebar */
 
-/* #wndregion Sidebar */
+
+/* #region main */
+
+.main{
+    height: calc(100vh - 70px);
+}
+
+.cm_badge_bg{
+    background-color: var(--boolstrap-badge-bg);
+}
+
+.cm_badge_bg:hover{
+    background-color: var(--boolstrap-badge-hover-bg);
+}
+
+/* #endregion main */
+
+
+@media screen and (max-width: 767px) {
+    
+    .offcanvas.offcanvas-end{
+        width: 100%;
+        
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+    .offcanvas.offcanvas-end{
+        width: 60%;
+        
+    }
+    
+}
